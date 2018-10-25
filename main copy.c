@@ -33,7 +33,7 @@ int main() {
             }
             double sumrow=0;
             for (j=0; j<col; j++){
-                matrix[i][j]=rand()/RAND_MAX+low;
+                matrix[i][j]=(double)rand()/RAND_MAX*(high-low)+low;
                 sumrow+=matrix[i][j];
                 if (i==j) sum+=matrix[i][j];
             }
