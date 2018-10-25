@@ -9,7 +9,11 @@ int main() {
         double **matrix, sum=0;
         printf("\nUnesite dimenziju kvadratne matrice:  ");
         scanf("%d", &row);
-        
+        if (row<=0){
+            printf("NOT VALID MATRIX SIZE \n");
+            break;
+        }
+        printf("\n");
         col=row;
         
         printf("Unesite opseg za generisanje rand brojeva. Prvo donju granicu, zatim gornju.\n");
